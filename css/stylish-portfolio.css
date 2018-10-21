@@ -14,7 +14,7 @@ body {
   font-family: 'Source Sans Pro';
 }
 
-.btn-xl {
+.btn-xl {max
   padding: 1.25rem 2.5rem;
 }
 
@@ -226,10 +226,10 @@ h6 {
 }
 
 .callout h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 20rem;
+  font-weight: 80;
   display: block;
-  max-width: 30rem;
+  max-width: 80rem;
 }
 
 .portfolio-item {

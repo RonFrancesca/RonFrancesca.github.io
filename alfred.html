@@ -86,17 +86,17 @@
     <section class="content-section bg-light" id="about">
       <div class="container text-left">
         <div class="row">
-          <p class="lead mb-1"><img src="img/alfred/alfred.png" align="right" alt="Francesca Foto" style="margin-left: 1.5em;margin-bottom: 1.5em">The Smart Butler project aims to create a system able to substitute a human butler in a domestic environmente! It will be everywhere, 
-            ready to perform any task in the shortest time, but it will show up only when needed. 
-            It will help the user to manage his daily routine, 
+          <p class="lead mb-1"><img src="img/alfred/alfred.png" align="right" alt="Francesca Foto" style="margin-left: 1.5em;margin-bottom: 1.5em">
+            The Smart Butler project aims to create a system able to substitute a human butler in a domestic environment!
+            <br>It will help the user to manage his daily routine, 
             relieving the customer from boring tasks and letting people enjoy their life with more energy!
           <br><br>
           Based on vocal commands and users’ agenda, 
-          the Smart Butler will be able to recognize the activities that the user is performing or is going to, thanks to a transparent network of sensors.      
-          It has different kind of funcionalities: mail notification, agenda and event's notification, music set, environment set and regulations, 
-          time setting and alarm, cooking recepits reading, news reading. 
-          It also has some built-in functionalities as cooking mode and training mode. With those two mode, Alfred is able 
-          to run more simple functionalities together making the user confortable to performe his tasks (setting the lights and environment in a customable way, 
+          Alfred will be able to recognize the activities that the user is going to performe, thanks to a transparent network of sensors.      
+          It has different kind of funcionalities: mail notification, agenda and event's notification, music setting, environment setting and regulations, 
+          time setting and alarm, cooking recepits reading and news reading. 
+          <br>It also has some built-in functionalities as cooking mode and training mode. With those two functions, Alfred is able 
+          to run more than one simple functionality together, making the user the most confortable as possible to performe his tasks (setting the lights and environment in customable way, 
           turning the music on, reading recepits or helping the user to get fit with the proper training, etc.).
           <br><br>
           Alfred will always be present, ready to help the user whenever he wants to, making his life simpler and better, 
@@ -105,6 +105,7 @@
            
         </div>
       </div>
+     <p></p><br><p></p>
       
       
       <!-- Software -->
@@ -112,20 +113,25 @@
         <div class="row">
         <h2> Software </h2><br>       
          <p class="lead mb-1"><img src="img/alfred/software.jpg" align="left" style="margin-right: 1.5em;">
-           Alfred uses a number of open source libraries to function. Pocketsphinx performs speech recognition via Python bindings to theCMUSphinx engine.
+           The project has been developed in Phyton, with the help of some open source libraries. 
+           <br>Pocketsphinx performs speech recognition via Python bindings to the CMUSphinx engine.
            Alfred’s voice is owed to the popular TTS program, eSpeak. Phonetisaurus and CMUCLMTK enable Alfred 
-           to generate dictionaries and language models on-the-fly based on the custom module vocabularies. 
+           to generate dictionaries and language models on-the-fly based on the custom module vocabularies. <br>
            Mopidy enables streaming from Spotify, for those users who wish to use the module.
-           bularies. Mopidy enables streaming from Spotify, for those users who wish to use the module.
            <br><br>
-           The client architecture is organized into a number of different components:
-           Main.py is the program that orchestrates all of Alfred. 
-           It creates mic, profile, and conversation instances. 
-           Next, the conversation instance is fed the mic and profile as inputs, from which it creates a notifier and a brain.
-           The brain then receives the mic and profile originally descended from main and loads all the interactive components into memory. 
-           The brain is essentially the interface between developer-written modules and the core framework. 
-           Each module must implement isValid() andhandle() functions, as well as define a WORDS = [...] list.
-           To learn more about how Alfred interactive modules work and how to write your own, check out the API guide.
+           The client architecture is organized into six different components.<br>
+           <b>Main</b> is the main process of Alfred. It set and creates <b>mic</b>, <b>profile</b>, and <b>conversation</b> instances. Subsequently,  
+           the conversation instance is passed to the mic and profile as inputs, from which it creates a <b>notifier</b> and a <b>brain</b>.
+           The brain receives the mic and profile from the main and loads all the interactive components into memory. 
+           The brain is essentially the interface between developer-written modules and the core framework. <br><br>
+           Each module need to implement two functions:
+           <ul style="list-style-type:circle">
+           <li class="lead mb-1">isValid(): it validates the input message</li>
+           <li class="lead mb-1">handle(): it handles the task in the proper way</li> 
+           </ul>
+            <p class="lead mb-1">together with a list of defined words which will help Alfred to understand if it is the right module to execute or not.
+           <br><br>
+           To learn more about how Alfred's interactive modules work and how to write your own, check out the API guide.
           </p>        
         </div>
       </div>
@@ -134,10 +140,11 @@
       <!-- Hardware -->
       <div class="container text-left" id="hardware">
         <div class="row">
-        <h2> Hardware and Logical Architecture </h2><br>       
+        <h2> Hardware</h2>
+        <br>
         <p class="lead mb-1">
-        Alfred is designed for the Raspberry Pi (Model B) and requires some additional hardware like a wifi adapter and USB microphone. 
-        The suggested hardware is indicated below (Alfred is not affiliated with any of the linked hardware vendors):
+        Alfred is designed for the Raspberry Pi (Model B) and requires some additional hardware to work.
+        The suggested hardware is indicated on the following list:
         <ul style="list-style-type:circle">
           <li class="lead mb-1">USB Microphone</li>
           <li class="lead mb-1">4GB SD Card</li>
@@ -147,16 +154,23 @@
           <li class="lead mb-1">Speakers that work through the Raspberry Pi audio jack (probably need to be self-powered)</li>
         </ul>
         <p class="lead mb-1">
-        The Raspberry Pi Verified Peripherals List may be helpful for finding substitutes for the products recommended above.
+        The Raspberry Pi Verified Peripherals List may be helpful to find substitutes for the products recommended above.
         <br><br>
         <img src="img/alfred/hardware.jpg" align="left" width="330" height="235" style="margin-right: 1.5em;">
         The assembly of the required components is simple and straightforward. <br>
         The user only need to insert the microphone, SD card, wireless adapter (if any), 
         ethernet cable, and speakers into the Raspberry Pi. The USB wall charging adapter is recommended to power Alfred as a standalone device.
-        The ethernet cable will be used to log in to the pi from a computer during the software installation step.
-        After installation, if the user prefer to use a wireless connection, this cable can be removed. <br> 
+        The ethernet cable will be used to log into the Raspberry Pi from a computer during the software installation step.
+        If after the installation the user prefer to use a wireless connection, this cable can be removed. <br> 
         In fact, Alfred runs just fine on a wired connection (via ethernet), 
-        so the user can choose between the two setups depending on what works best for you.</p>              
+        so the user can choose between the two setups depending on what works best for him.</p>     
+        <p class="lead mb-1"><img src="img/alfred/hardwareLA.jpg" align="right" style="margin-left: 1.5em;margin-top: 1.5em"><br><br><br><br><br>
+          Different services as Youtube, Spotify, Big Oven's, Google's services are integrated in the system
+          through the Dog Gateway, in order to use the proper API and perform the various tasks in the proper and most efficient way.
+          <br><br><br><br><br>
+          If you want to know more about Alfred project, check 
+          <a href="https://github.com/RonFrancesca/Alfred-The-SmartButler" target="_top" style="color:#504C4B;text-decoration:underline">this link</a> out.
+        </p>     
         </div>
       </div>
     </section>

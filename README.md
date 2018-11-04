@@ -1,4 +1,4 @@
-Francesca Ronchini's digital portfolio.
+Francesca Ronchini's digital portfolio: https://ronfrancesca.github.io/
 
 Check it out! 
-https://ronfrancesca.github.io/
+

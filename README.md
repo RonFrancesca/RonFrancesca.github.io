@@ -1,2 +1,2 @@
 Francesca Ronchini's digital portfolio,
-Check it out!
+check it out!

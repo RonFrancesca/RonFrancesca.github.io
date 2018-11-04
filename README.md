@@ -1,1 +1,2 @@
-Francesca Ronchini's digital portfolio!
+Francesca Ronchini's digital portfolio,
+Check it out!

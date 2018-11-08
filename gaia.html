@@ -99,13 +99,13 @@
           Center (BSC)</b>. <br>
           Every few months, all the raw data accumulated up to that moment need to be reprocess in order to:
           <ul style="list-style-type:circle">
-              <li class="lead mb-1">refine the image parameters from the astrometric images acquired by the instrument </li>
+              <li class="lead mb-1">refine the image parameters from the astrometric images acquired by the spacecraft </li>
               <li class="lead mb-1">refine the <b>Cross Match (XM)</b> for all the detections.</li>
           </ul>      
           <p class="lead mb-1">In particular, the XM will handle an enormous
           number of detections at the end of the mission, so it will obviously not be possible to
           handle them in a single process.
-          Moreover, limitation and contrains imposed by the features of the execution environment should be considered.<br>
+          Moreover, limitations and contrains imposed by the features of the execution environment should be considered.<br>
           Therefore, it is necessary to optimize the <b>Data Access Layer (DAL)</b> in
           order to efficiently store the huge amount of data coming from the spacecraft, and to
           access it in a smart manner. 
@@ -125,7 +125,12 @@
           Equal Area isoLatitude Pixelization (HEALPix)</b> to tessellate the sphere. <br>In this way it
           is possible to distribute and process the detections separately and in parallel, according
           to their distribution on the sky. Moreover, the HEALPix library and the framework
-          implemented here allows to consider the data at different resolution levels according to
+          implemented here allow
+            
+            
+            
+            
+            to consider the data at different resolution levels according to
           the desired precision. <br><br>
           Two different alternatives have been designed and developed, namely, a <b>Flat solution</b>
           and a <b>Hierarchical solution</b>. It refers to the distribution of the data through the file.
@@ -171,8 +176,8 @@
           team. This has allowed to integrate the work done in this project into the existing DAL
           architecture in the most efficient way.
           <br><br>
-          If you want to know more about this project, check 
-          <a href="https://github.com/RonFrancesca/Gaia-Mission" target="_blank" style="color:#333333;text-decoration:underline">this link</a> out.
+          If you want to know more about this project, check out
+          <a href="https://github.com/RonFrancesca/Gaia-Mission" target="_blank" style="color:#333333;text-decoration:underline">this link</a>.
           </p>         
         </div>
       </div>

@@ -97,7 +97,7 @@
           One of the most important DPAC systems is the <b>Intermediate Data Updating (IDU)</b>,
           executed at the Marenostrum supercomputer hosted by the <b>Barcelona Supercomputing
           Center (BSC)</b>. <br>
-          Every few months, all the raw data accumulated up to that moment need to be reprocess in order to:
+          Every few months, all the raw data accumulated up to that moment need to be reprocessed in order to:
           <ul style="list-style-type:circle">
               <li class="lead mb-1">refine the image parameters from the astrometric images acquired by the spacecraft </li>
               <li class="lead mb-1">refine the <b>Cross Match (XM)</b> for all the detections.</li>
@@ -105,7 +105,7 @@
           <p class="lead mb-1">In particular, the XM will handle an enormous
           number of detections at the end of the mission, so it will obviously not be possible to
           handle them in a single process.
-          Moreover, limitations and contrains imposed by the features of the execution environment should be considered.<br>
+          Moreover, limitations and constraints imposed by the features of the execution environment should be considered.<br>
           Therefore, it is necessary to optimize the <b>Data Access Layer (DAL)</b> in
           order to efficiently store the huge amount of data coming from the spacecraft, and to
           access it in a smart manner. 

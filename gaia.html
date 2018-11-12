@@ -86,7 +86,7 @@
       <div class="container text-left">
         <div class="row">
           <p class="lead mb-1"><img src="img/gaia/gaia1.jpg" align="right" width="330" height="235" style="margin-left:1.5em;margin-bottom:1.5em">  
-           Gaia is an ambitious astrometric space mission adopted within the scientific programme
+           <a href="http://sci.esa.int/gaia/" target="_blank" style="color:#333333;text-decoration:underline">Gaia</a> is an ambitious astrometric space mission adopted within the scientific programme
           of the European Space Agency (ESA) in October 2000. It measures with very high
           accuracy the positions and velocities of a large number of stars and astronomical objects.
           At the end of the mission, a detailed three-dimensional map of more than one billion
@@ -120,17 +120,13 @@
           <div class="row">
           <h2> Implementation </h2><br> 
           <p class="lead mb-1">
-          It has been developed and implemented an efficient and flexible file format based on <b>Hierarchical Data Format version 5 (HDF5)</b>, 
+          It has been developed and implemented an efficient and flexible file format based on 
+          <b>Hierarchical Data Format version 5 (<a href="https://support.hdfgroup.org/HDF5/" target="_blank" style="color:#333333;text-decoration:underline">HDF5</a>)</b>, 
           arranging the detections by a spatial index such as <b>Hierarchical
-          Equal Area isoLatitude Pixelization (HEALPix)</b> to tessellate the sphere. <br>In this way it
+          Equal Area isoLatitude Pixelization (<a href="https://healpix.sourceforge.io/" target="_blank" style="color:#333333;text-decoration:underline">HEALPix</a>)</b> to tessellate the sphere. <br>In this way it
           is possible to distribute and process the detections separately and in parallel, according
           to their distribution on the sky. Moreover, the HEALPix library and the framework
-          implemented here allow
-            
-            
-            
-            
-            to consider the data at different resolution levels according to
+          implemented here allow to consider the data at different resolution levels according to
           the desired precision. <br><br>
           Two different alternatives have been designed and developed, namely, a <b>Flat solution</b>
           and a <b>Hierarchical solution</b>. It refers to the distribution of the data through the file.
